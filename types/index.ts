@@ -39,6 +39,10 @@ export interface FilterProps {
     model: string;
 }
 
+export interface HomeProps {
+    searchParams: FilterProps;
+}
+
 export interface OptionProps {
     value: string;
     title: string;
@@ -47,4 +51,9 @@ export interface OptionProps {
 export interface CustomFilterProps {
     title: string;
     options: OptionProps[];
+}
+
+export interface ShowMoreProps {
+    pageNumber: number;
+    isNext: boolean;
 }
